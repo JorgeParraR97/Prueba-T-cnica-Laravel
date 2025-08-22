@@ -20,7 +20,7 @@ class ProcesarProduccionCommand extends Command
 
     public function handle(): int
     {
-        $maquinaId = $this->option('id_maquina');
+        $maquinaId = $this->option('maquina');
 
         $query = Maquina::query();
         if ($maquinaId) $query->where('id', $maquinaId);

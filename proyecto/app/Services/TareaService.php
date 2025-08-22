@@ -32,6 +32,7 @@ class TareaService
         }
 
         $coef = (float) $tarea->maquina->coeficiente;
+        dump('tiempo_empleado:', $tarea->tiempo_empleado, 'coeficiente:', $coef);
         $tarea->tiempo_produccion = round(((float)$tarea->tiempo_empleado) * $coef, 2);
 
         $tarea->estado = 'COMPLETADA';
