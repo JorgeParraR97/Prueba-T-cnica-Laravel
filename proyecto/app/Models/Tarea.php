@@ -33,9 +33,7 @@ class Tarea extends Model
     ];
 
     
-    protected $attributes = [
-        'estado' => self::ESTADO_PENDIENTE,
-    ];
+   protected $attributes = ['estado' => 'PENDIENTE'];
 
     
     public function maquina(): BelongsTo

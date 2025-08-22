@@ -18,6 +18,11 @@ class DatabaseSeeder extends Seeder
         if ($faltantes > 0) {
             Maquina::factory()->count($faltantes)->create();
         }
+
+
+        $this->call([
+        TareasAleatoriasSeeder::class,
+    ]);
     }
    
 }

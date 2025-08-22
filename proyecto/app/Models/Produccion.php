@@ -11,10 +11,10 @@ class Produccion extends Model
 {
     use HasFactory;
 
-    protected $table = 'producciones';
+    protected $table = 'produccion';
 
     protected $fillable = [
-        'id_maquina',
+        'maquina_id',
         'tiempo_produccion',
         'tiempo_inactividad',
         'fecha_hora_inicio_inactividad',

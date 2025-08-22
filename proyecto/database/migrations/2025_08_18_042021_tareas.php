@@ -15,8 +15,8 @@ return new class extends Migration
             $table->unsignedBigInteger('id_produccion')->nullable(); 
             $table->dateTime('fecha_hora_inicio');
             $table->dateTime('fecha_hora_termino');
-            $table->decimal('tiempo_empleado', 4, 2);
-            $table->decimal('tiempo_produccion', 4, 2);
+            $table->decimal('tiempo_empleado', 5, 2)->nullable(); ;
+            $table->decimal('tiempo_produccion', 5, 2)->nullable(); ;
             $table->enum('estado', ['PENDIENTE','COMPLETADA'])->default('PENDIENTE');
             $table->timestamps();
 

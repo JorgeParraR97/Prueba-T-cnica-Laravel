@@ -11,6 +11,6 @@ class Maquina extends Model
 
     protected $fillable = ['nombre', 'coeficiente'];
 
-    public function tareas() { return $this->hasMany(Tarea::class, 'id_maquina'); }
+    public function tareas() { return $this->hasMany(Tarea::class, 'maquina_id'); }
     
 }
